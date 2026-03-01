@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Marquee from './Marquee';
 import CitySection from './CitySection';
+import WhyChooseUs from './WhyChooseUs';
 
 export default function Hero() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -156,6 +157,8 @@ export default function Hero() {
         cityNameItalic="Trang"
         cityKey="nt"
       />
+
+      <WhyChooseUs />
     </>
   );
 }

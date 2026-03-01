@@ -802,3 +802,162 @@ nav.scrolled {
   background: var(--pink-light);
   transform: translateY(-2px);
 }
+
+.why-section {
+  padding: 8rem 4rem;
+  background: var(--black);
+  position: relative;
+}
+
+.why-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+.why-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.why-eyebrow {
+  font-size: 0.62rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--pink-main);
+}
+
+.why-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.why-title em {
+  font-style: italic;
+  color: var(--pink-main);
+}
+
+.why-description {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.why-cta {
+  background: var(--pink-main);
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: flex-start;
+  margin-top: 1rem;
+}
+
+.why-cta:hover {
+  background: var(--pink-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(232, 116, 138, 0.25);
+}
+
+.why-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.why-feature-card {
+  display: flex;
+  gap: 1.8rem;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.why-feature-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(232, 116, 138, 0.3);
+  transform: translateX(8px);
+}
+
+.why-feature-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(232, 116, 138, 0.1);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-size: 1.2rem;
+  color: var(--pink-main);
+}
+
+.why-feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.why-feature-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.why-feature-desc {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .why-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .why-section {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-title {
+    font-size: 2.5rem;
+  }
+
+  .why-feature-card {
+    padding: 1.8rem;
+    gap: 1.2rem;
+  }
+
+  .why-feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
